@@ -130,7 +130,7 @@ python3 indexnow.py --tier fast --dry-run
 **On an alert issue** (labelled `indexnow-alert`)
 - *Circuit breaker tripped* → a sitemap likely regenerated with fresh `lastmod`s. Confirm it is not a real mass update, then re-run; state was not advanced.
 - *403 / 422* → the key file is missing/wrong or a host mismatch. Re-check step 1 and the `INDEXNOW_KEY` secret match.
-- *N sitemaps errored* → a leaf returned an error (see the known issue below).
+- *N sitemaps errored* → a leaf returned an error; the run routes around it (see "Resilience" below).
 
 **Rotate the key**
 1. Generate: `openssl rand -hex 16`
@@ -139,13 +139,15 @@ python3 indexnow.py --tier fast --dry-run
 
 ---
 
-## Known issue (upstream, not this automation)
+## Resilience to broken / new sitemaps
 
-`https://pharmeasy.in/blog/post-sitemap.xml` returns **HTTP 500**. It is listed in
-the blog sitemap index but serves an error, so those blog posts are invisible to
-**every** crawler, not just IndexNow. `post-sitemap2.xml` works. Worth fixing with
-whoever owns the WordPress/Yoast install. This tool logs it (and can raise an alert)
-rather than failing the whole run.
+If a leaf sitemap returns an error (e.g. a 5xx from the CDN or WordPress), the tool
+logs it, raises an alert, and **carries forward** that leaf's previous URLs rather
+than treating the failure as a mass deletion — one bad leaf never sinks the run.
+
+When a leaf later starts working (or a brand-new shard appears), it is **first-seen**
+and gets **baselined silently** — recorded, nothing submitted — so recovered or newly
+added sections never cause a bulk push. Subsequent changes then flow as normal deltas.
 
 ---
 
