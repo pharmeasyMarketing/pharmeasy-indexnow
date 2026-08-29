@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="//pharmeasy.in/sitemaps/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://pharmeasy.in/online-medicine-order/stable-product-1</loc>
+    <lastmod>2026-07-20T10:00:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pharmeasy.in/online-medicine-order/changing-product-2</loc>
+    <lastmod>2026-08-01T09:30:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pharmeasy.in/online-medicine-order/brand-new-product-4</loc>
+    <lastmod>2026-08-01T11:00:00+05:30</lastmod>
+  </url>
+  <url>
+    <loc>https://pharmeasy.in/cart/should-be-filtered</loc>
+    <lastmod>2026-07-20T10:00:00+05:30</lastmod>
+  </url>
+</urlset>

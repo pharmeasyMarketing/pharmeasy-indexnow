@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+      - "state/**"        # state commits carry [skip ci], but ignore them anyway
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Byte-compile
+        run: python -m py_compile indexnow.py
+
+      - name: Validate config.json
+        run: python -c "import json; json.load(open('config.json')); print('config.json OK')"
+
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v

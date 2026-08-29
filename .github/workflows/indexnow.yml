@@ -1,0 +1,118 @@
+name: IndexNow submit
+
+on:
+  schedule:
+    # Fast tier: small, high-velocity sections (blog, categories, doctors,
+    # diagnostics, general). Hourly at :20 (top-of-hour scheduler is congested).
+    - cron: "20 * * * *"
+    # Full tier: entire sitemap tree. Timed just after PharmEasy regenerates
+    # its sitemaps (~07:00, ~18:30, ~21:00 UTC + an early slot for OTC).
+    - cron: "0 8,14,19,22 * * *"
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: "Tier to sweep"
+        type: choice
+        options: [fast, full]
+        default: fast
+      dry_run:
+        description: "Compute the diff but submit nothing (writes no state)"
+        type: boolean
+        default: true
+      seed:
+        description: "Record baseline state and submit nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # commit updated state/ back to the repo
+  issues: write     # open/comment an alert issue on failure
+
+concurrency:
+  group: indexnow-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve run parameters
+        id: params
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            tier="${{ inputs.tier }}"; dry="${{ inputs.dry_run }}"; seed="${{ inputs.seed }}"
+          elif [ "${{ github.event.schedule }}" = "20 * * * *" ]; then
+            tier="fast"; dry="false"; seed="false"
+          else
+            tier="full"; dry="false"; seed="false"
+          fi
+          echo "tier=$tier"   >> "$GITHUB_OUTPUT"
+          echo "dry_run=$dry" >> "$GITHUB_OUTPUT"
+          echo "seed=$seed"   >> "$GITHUB_OUTPUT"
+          echo "Resolved -> tier=$tier dry_run=$dry seed=$seed"
+
+      - name: Restore URL-state cache
+        uses: actions/cache/restore@v4
+        with:
+          path: cache
+          key: indexnow-cache-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            indexnow-cache-
+
+      - name: Run IndexNow submitter
+        id: indexnow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          mkdir -p cache state
+          flags="--tier ${{ steps.params.outputs.tier }}"
+          [ "${{ steps.params.outputs.dry_run }}" = "true" ] && flags="$flags --dry-run"
+          [ "${{ steps.params.outputs.seed }}" = "true" ] && flags="$flags --seed"
+          echo "python indexnow.py $flags"
+          python indexnow.py $flags
+
+      - name: Save URL-state cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: cache
+          key: indexnow-cache-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Commit updated state
+        if: always()
+        run: |
+          git config user.name "indexnow-bot"
+          git config user.email "marketing@pharmeasy.in"
+          git add state/
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "chore(state): ${{ steps.params.outputs.tier }} run [skip ci]"
+            git push
+          fi
+
+      - name: Alert on failure
+        if: failure() || steps.indexnow.outputs.alert == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALERT_MSG: ${{ steps.indexnow.outputs.alert_message }}
+          TIER: ${{ steps.params.outputs.tier }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create indexnow-alert --color B60205 --description "IndexNow automation alerts" 2>/dev/null || true
+          msg="${ALERT_MSG:-A workflow step failed.}"
+          body="$msg
+
+          Run: $RUN_URL"
+          existing=$(gh issue list --label indexnow-alert --state open --limit 1 --json number --jq '.[0].number' 2>/dev/null || echo "")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "IndexNow $TIER run needs attention" --label indexnow-alert --body "$body"
+          fi

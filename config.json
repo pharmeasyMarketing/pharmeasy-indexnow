@@ -1,0 +1,67 @@
+{
+  "host": "pharmeasy.in",
+  "key_env": "INDEXNOW_KEY",
+  "key_location_template": "https://pharmeasy.in/{key}.txt",
+  "user_agent": "PharmEasy-IndexNow/1.0 (+https://pharmeasy.in)",
+
+  "endpoints": {
+    "primary": "https://api.indexnow.org/IndexNow",
+    "extra": []
+  },
+
+  "tiers": {
+    "fast": {
+      "description": "Small, high-velocity sections. Swept hourly.",
+      "roots": [
+        "https://pharmeasy.in/sitemaps/sitemap-general.xml",
+        "https://pharmeasy.in/sitemaps/sitemap-categories.xml",
+        "https://pharmeasy.in/sitemaps/sitemap-doctors.xml",
+        "https://pharmeasy.in/sitemaps/sitemap-diagnostic.xml",
+        "https://pharmeasy.in/blog/sitemap_index.xml"
+      ]
+    },
+    "full": {
+      "description": "Entire sitemap tree. Swept a few times a day.",
+      "roots": [
+        "https://pharmeasy.in/sitemap.xml"
+      ]
+    }
+  },
+
+  "limits": {
+    "batch_size": 5000,
+    "per_run_cap": 10000,
+    "circuit_breaker_fraction": 0.25,
+    "circuit_breaker_min": 5000,
+    "debounce_hours": 24,
+    "batch_pause_seconds": 2,
+    "http_timeout_seconds": 60,
+    "http_retries": 3,
+    "http_backoff_seconds": 5
+  },
+
+  "robots_disallow": [
+    "/account/",
+    "/cart/",
+    "/checkout/",
+    "/order-success",
+    "/order/",
+    "/payment/",
+    "/healthcare",
+    "/home",
+    "/upload-prescription",
+    "/offers/",
+    "/search/all",
+    "/prescription-medicine/*/custom-medicine",
+    "/api/",
+    "/diagnostics/upload-prescription",
+    "/diagnostics/lp",
+    "/diagnostics/checkout/",
+    "/diagnostics/search/all",
+    "/diagnostic-test/",
+    "/new-home-page",
+    "/coronavirus-assessment/",
+    "/pe-care/",
+    "/appstore"
+  ]
+}

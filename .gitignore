@@ -1,0 +1,20 @@
+# Local secrets / connection settings — never commit
+.env
+
+# Ephemeral URL-level state (lives in GitHub Actions cache, not git)
+cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Claude Code local settings (not part of the deliverable)
+.claude/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
