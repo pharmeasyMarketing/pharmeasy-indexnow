@@ -123,8 +123,9 @@ python3 indexnow.py --tier fast --dry-run
 ```
 
 **What each run leaves behind**
-- [`state/sitemaps.json`](state/sitemaps.json) — per-leaf ETag, URL count, watermark. Committed. Read this first when debugging.
-- [`state/runs.jsonl`](state/runs.jsonl) — one line per run (counts, responses, warnings). The audit trail.
+- [`state/RUNLOG.md`](state/RUNLOG.md) — **human-readable log** you can just open on GitHub: a health banner + a table of the last ~200 runs (time, tier, mode, status, submitted, warnings). Start here.
+- [`state/sitemaps.json`](state/sitemaps.json) — per-leaf ETag, URL count, watermark. Committed. Read this when debugging a specific section.
+- [`state/runs.jsonl`](state/runs.jsonl) — one JSON line per run (full detail: counts, batch responses, warnings). Machine-readable source of truth behind `RUNLOG.md`.
 - URL-level detail lives in the Actions **cache** (not git). If it is ever evicted, the next run falls back to a `lastmod` watermark and rebuilds it — logged as a warning, not a failure.
 
 **On an alert issue** (labelled `indexnow-alert`)
@@ -136,6 +137,43 @@ python3 indexnow.py --tier fast --dry-run
 1. Generate: `openssl rand -hex 16`
 2. Host the new `<key>.txt`, update the `INDEXNOW_KEY` secret, update `.env`.
 3. Old and new can coexist; remove the old file after a day.
+
+---
+
+## Monitoring & alerts
+
+**Daily check (30 seconds):** open [`state/RUNLOG.md`](state/RUNLOG.md) in the repo.
+The banner at the top shows the latest run's status; the table shows the recent
+history. Healthy days are `✅ ok` rows with small submitted counts. Watch for
+`⛔ aborted` (circuit breaker), `❌ failed` (key/host problem), or a `⚠️ warn`
+streak (a sitemap section erroring).
+
+**Email on failure — two ways:**
+
+1. **GitHub native (already on, no setup).** GitHub emails the repo owner when a
+   scheduled workflow fails, and again when the alert **issue** is opened. To be
+   sure it reaches you: github.com → your avatar → **Settings → Notifications →
+   Actions** → enable *"Send notifications for failed workflows"*, and confirm
+   **Watching** on the repo (Watch → All Activity, or Custom → Issues) so the
+   `indexnow-alert` issue emails you too. This covers most people with zero work.
+
+2. **Direct SMTP email to a chosen address (optional).** For alerts to a shared
+   inbox (e.g. a marketing alias), add these repo **secrets** (Settings → Secrets
+   and variables → Actions). The email step stays inert until `SMTP_USERNAME` is set:
+
+   | Secret | Example | Notes |
+   |--------|---------|-------|
+   | `SMTP_SERVER` | `smtp.gmail.com` | your mail provider's SMTP host |
+   | `SMTP_PORT` | `465` | SSL port (the step uses `secure: true`) |
+   | `SMTP_USERNAME` | `alerts@yourdomain.com` | the sending account |
+   | `SMTP_PASSWORD` | *app password* | Gmail/Workspace: create an **App Password**, not your login password |
+   | `ALERT_EMAIL_TO` | `seo-team@pharmeasy.in` | where alerts go (comma-separate for several) |
+
+   Fires only on a failed/aborted run — not on healthy runs.
+
+**What triggers an alert:** circuit breaker abort, `403/422` (key file/host issue),
+or any step failing. A single erroring leaf sitemap is logged and worked around,
+not alerted (see Resilience below).
 
 ---
 

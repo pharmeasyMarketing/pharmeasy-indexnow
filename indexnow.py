@@ -459,6 +459,85 @@ def append_run_log(path: str, record: dict) -> None:
         f.write(json.dumps(record, sort_keys=True) + "\n")
 
 
+STATUS_EMOJI = {"ok": "✅", "seed": "🌱", "warn": "⚠️", "aborted": "⛔", "failed": "❌"}
+
+
+def _run_status(rec: dict) -> str:
+    """Derive a status label from a run-log record (tolerant of old records)."""
+    s = rec.get("status")
+    if s:
+        return s
+    if rec.get("aborted"):
+        return "aborted"
+    if rec.get("mode") == "seed":
+        return "seed"
+    if rec.get("errored_leaves"):
+        return "warn"
+    return "ok"
+
+
+def _fmt_utc(iso: str) -> str:
+    # "2026-08-29T17:22:03+00:00" -> "2026-08-29 17:22 UTC"
+    t = iso.replace("T", " ")
+    return (t[:16] + " UTC") if len(t) >= 16 else (iso or "?")
+
+
+def render_runlog(runs_file: str, runlog_path: str, window: int = 200) -> None:
+    """Render a human-readable Markdown view of the most recent runs.
+
+    Derived entirely from runs.jsonl (the machine-readable source of truth), so
+    the two never drift. Newest first, with a one-line health banner on top.
+    """
+    if not os.path.exists(runs_file):
+        return
+    records = []
+    with open(runs_file, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                records.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
+    if not records:
+        return
+
+    recent = list(reversed(records[-window:]))  # newest first
+    latest = recent[0]
+    ls = _run_status(latest)
+    banner = (f"_Last run: {_fmt_utc(latest.get('at', ''))} — "
+              f"{STATUS_EMOJI.get(ls, '')} {ls.upper()} · "
+              f"{latest.get('tier', '?')} tier · "
+              f"submitted {latest.get('submitted', 0)}, "
+              f"candidates {latest.get('candidates', 0)}._")
+
+    out = [
+        "# IndexNow run log",
+        "",
+        banner,
+        "",
+        f"Most recent {len(recent)} run(s), newest first. Times are UTC. "
+        "Full machine-readable history: [`runs.jsonl`](runs.jsonl).",
+        "",
+        "| UTC time | Tier | Mode | Status | Cand. | Submitted | Deferred | Warn |",
+        "|----------|------|------|--------|------:|----------:|---------:|-----:|",
+    ]
+    for rec in recent:
+        s = _run_status(rec)
+        out.append(
+            f"| {_fmt_utc(rec.get('at', ''))} | {rec.get('tier', '?')} "
+            f"| {rec.get('mode', '?')} | {STATUS_EMOJI.get(s, '')} {s} "
+            f"| {rec.get('candidates', 0)} | {rec.get('submitted', 0)} "
+            f"| {rec.get('deferred', 0)} | {rec.get('warnings', 0)} |")
+    text = "\n".join(out) + "\n"
+    os.makedirs(os.path.dirname(runlog_path) or ".", exist_ok=True)
+    tmp = runlog_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        f.write(text)
+    os.replace(tmp, runlog_path)
+
+
 def emit_alert(message: str) -> None:
     """Leave a marker the workflow turns into a GitHub issue."""
     out = os.environ.get("GITHUB_OUTPUT")
@@ -678,10 +757,14 @@ def run(args) -> int:
                f"this looks like a sitemap regeneration, not real content change.")
         emit_alert(msg)
         write_summary(["# IndexNow: ABORTED", "", msg])
-        append_run_log(args.runs_file, {
-            "at": iso_now(), "tier": tier, "mode": mode, "aborted": True,
-            "candidates": len(candidates), "threshold": threshold, "total_urls": total_urls,
-        })
+        if not args.dry_run:
+            append_run_log(args.runs_file, {
+                "at": iso_now(), "tier": tier, "mode": mode, "status": "aborted",
+                "aborted": True, "candidates": len(candidates), "submitted": 0,
+                "deferred": 0, "warnings": len(warnings),
+                "threshold": threshold, "total_urls": total_urls,
+            })
+            render_runlog(args.runs_file, args.runlog_file)
         return EXIT_CIRCUIT_BREAKER
 
     # -- debounce ----------------------------------------------------------- #
@@ -774,17 +857,21 @@ def run(args) -> int:
         summary.append("\n</details>")
     write_summary(summary)
 
+    run_status = ("failed" if hard_failure else
+                  "seed" if mode == "seed" else
+                  "warn" if crawl.errored else "ok")
     if not args.dry_run:
         append_run_log(args.runs_file, {
-            "at": iso_now(), "tier": tier, "mode": mode,
+            "at": iso_now(), "tier": tier, "mode": mode, "status": run_status,
             "leaves": len(leaves), "total_urls": total_urls,
             "new": len(diff.new), "changed": len(diff.changed), "removed": len(diff.removed),
             "candidates": len(candidates), "dropped_hygiene": dropped_hygiene,
             "debounced": debounced, "submitted": submitted_count,
             "deferred": len(deferred) + (len(to_submit) - n_accepted if retry_after else 0),
-            "errored_leaves": crawl.errored,
+            "warnings": len(warnings), "errored_leaves": crawl.errored,
             "batch_results": batch_results, "retry_after": retry_after,
         })
+        render_runlog(args.runs_file, args.runlog_file)
 
     if hard_failure:
         emit_alert("IndexNow returned 403/422 -- key file or host mismatch. "
@@ -804,6 +891,8 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p.add_argument("--config", default="config.json")
     p.add_argument("--state-file", default=os.path.join("state", "sitemaps.json"))
     p.add_argument("--runs-file", default=os.path.join("state", "runs.jsonl"))
+    p.add_argument("--runlog-file", default=os.path.join("state", "RUNLOG.md"),
+                   help="human-readable Markdown run log (derived from runs-file)")
     p.add_argument("--cache-dir", default=os.environ.get("INDEXNOW_CACHE_DIR", "cache"))
     p.add_argument("--dry-run", action="store_true",
                    help="compute and print the diff; submit nothing; write no state")

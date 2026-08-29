@@ -35,6 +35,10 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      # Mirrored to job scope so the email step's `if:` can test whether SMTP is
+      # configured. Empty (step skipped) until you add the secret.
+      SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
     steps:
       - uses: actions/checkout@v7
 
@@ -116,3 +120,26 @@ jobs:
           else
             gh issue create --title "IndexNow $TIER run needs attention" --label indexnow-alert --body "$body"
           fi
+
+      # Optional direct email. Inert until you add the SMTP_* / ALERT_EMAIL_TO
+      # secrets (see README > Monitoring & alerts). GitHub also emails the repo
+      # owner on failed runs natively, so email works even without this step.
+      - name: Email alert on failure
+        if: (failure() || steps.indexnow.outputs.alert == 'true') && env.SMTP_USERNAME != ''
+        uses: dawidd6/action-send-mail@v18
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          secure: true
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          from: IndexNow Bot <${{ secrets.SMTP_USERNAME }}>
+          to: ${{ secrets.ALERT_EMAIL_TO }}
+          subject: "[IndexNow] ${{ steps.params.outputs.tier }} run needs attention"
+          body: |
+            An IndexNow ${{ steps.params.outputs.tier }} run failed or was aborted.
+
+            ${{ steps.indexnow.outputs.alert_message }}
+
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            Log: state/RUNLOG.md in the repo.
