@@ -1,6 +1,7 @@
 """Offline unit tests for indexnow.py. No network. Run:  python -m unittest discover tests"""
 
 import gzip
+import json
 import os
 import sys
 import tempfile
@@ -229,6 +230,58 @@ class TestBuildGlobals(unittest.TestCase):
             self.assertEqual(len(diff.new), 1)
             self.assertEqual(len(diff.changed), 1)
             self.assertEqual(len(diff.removed), 1)
+
+
+class TestRunlog(unittest.TestCase):
+    def test_status_derivation(self):
+        self.assertEqual(indexnow._run_status({"status": "ok"}), "ok")
+        self.assertEqual(indexnow._run_status({"aborted": True}), "aborted")
+        self.assertEqual(indexnow._run_status({"mode": "seed"}), "seed")
+        self.assertEqual(indexnow._run_status({"errored_leaves": ["x"]}), "warn")
+        self.assertEqual(indexnow._run_status({"mode": "normal"}), "ok")
+
+    def test_render_runlog_newest_first_with_banner(self):
+        with tempfile.TemporaryDirectory() as d:
+            runs = os.path.join(d, "runs.jsonl")
+            out = os.path.join(d, "RUNLOG.md")
+            with open(runs, "w", encoding="utf-8") as f:
+                f.write(json.dumps({"at": "2026-08-29T16:39:36+00:00", "tier": "full",
+                                    "mode": "seed", "status": "seed", "candidates": 0,
+                                    "submitted": 0}) + "\n")
+                f.write(json.dumps({"at": "2026-08-29T17:20:10+00:00", "tier": "fast",
+                                    "mode": "normal", "status": "ok", "candidates": 5,
+                                    "submitted": 5, "deferred": 0, "warnings": 0}) + "\n")
+            indexnow.render_runlog(runs, out)
+            text = open(out, encoding="utf-8").read()
+            self.assertIn("# IndexNow run log", text)
+            self.assertIn("Last run: 2026-08-29 17:20 UTC", text)  # banner = newest
+            rows = [ln for ln in text.splitlines() if ln.startswith("| 2026")]
+            self.assertEqual(len(rows), 2)
+            self.assertIn("17:20", rows[0])   # newest row first
+            self.assertIn("16:39", rows[1])   # older row second
+            self.assertIn("✅ ok", text)
+            self.assertIn("🌱 seed", text)
+
+    def test_render_runlog_rolling_window(self):
+        with tempfile.TemporaryDirectory() as d:
+            runs = os.path.join(d, "runs.jsonl")
+            out = os.path.join(d, "RUNLOG.md")
+            with open(runs, "w", encoding="utf-8") as f:
+                for i in range(10):
+                    f.write(json.dumps({"at": f"2026-08-29T10:{i:02d}:00+00:00",
+                                        "tier": "fast", "mode": "normal", "status": "ok",
+                                        "candidates": i, "submitted": i}) + "\n")
+            indexnow.render_runlog(runs, out, window=3)
+            text = open(out, encoding="utf-8").read()
+            self.assertIn("Most recent 3 run(s)", text)
+            self.assertIn("10:09", text)      # newest kept
+            self.assertNotIn("10:06", text)   # outside the window
+
+    def test_render_runlog_missing_file_is_noop(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = os.path.join(d, "RUNLOG.md")
+            indexnow.render_runlog(os.path.join(d, "nope.jsonl"), out)
+            self.assertFalse(os.path.exists(out))
 
 
 if __name__ == "__main__":
