@@ -36,9 +36,9 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -58,7 +58,7 @@ jobs:
           echo "Resolved -> tier=$tier dry_run=$dry seed=$seed"
 
       - name: Restore URL-state cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: cache
           key: indexnow-cache-${{ github.run_id }}-${{ github.run_attempt }}
@@ -79,7 +79,7 @@ jobs:
 
       - name: Save URL-state cache
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: cache
           key: indexnow-cache-${{ github.run_id }}-${{ github.run_attempt }}
