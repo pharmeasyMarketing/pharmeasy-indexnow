@@ -255,9 +255,10 @@ class TestRunlog(unittest.TestCase):
             text = open(out, encoding="utf-8").read()
             self.assertIn("# IndexNow run log", text)
             self.assertIn("Last run: 2026-08-29 17:20 UTC", text)  # banner = newest
-            body = text.split("|----")[1]
-            # newest row must appear before the older seed row
-            self.assertLess(body.index("17:20"), body.index("16:39"))
+            rows = [ln for ln in text.splitlines() if ln.startswith("| 2026")]
+            self.assertEqual(len(rows), 2)
+            self.assertIn("17:20", rows[0])   # newest row first
+            self.assertIn("16:39", rows[1])   # older row second
             self.assertIn("✅ ok", text)
             self.assertIn("🌱 seed", text)
 
