@@ -1,6 +1,7 @@
 """Offline unit tests for indexnow.py. No network. Run:  python -m unittest discover tests"""
 
 import gzip
+import json
 import os
 import sys
 import tempfile
