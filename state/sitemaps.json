@@ -1,17 +1,17 @@
 {
   "lastRun": {
-    "at": "2026-10-11T13:06:04+00:00",
-    "candidates": 0,
+    "at": "2026-10-11T14:29:15+00:00",
+    "candidates": 1313,
     "deferred": 0,
     "mode": "normal",
-    "submitted": 0,
-    "tier": "fast"
+    "submitted": 1313,
+    "tier": "full"
   },
   "leaves": {
     "https://pharmeasy.in/blog/author-sitemap.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-08-21T12:51:30+00:00",
       "status": "ok",
       "urlCount": 42
@@ -19,7 +19,7 @@
     "https://pharmeasy.in/blog/page-sitemap.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-07-20T06:51:25+00:00",
       "status": "ok",
       "urlCount": 2
@@ -27,7 +27,7 @@
     "https://pharmeasy.in/blog/post-sitemap.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-08-11T12:14:40+00:00",
       "status": "ok",
       "urlCount": 198
@@ -35,7 +35,7 @@
     "https://pharmeasy.in/blog/post-sitemap2.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-08-18T09:44:08+00:00",
       "status": "ok",
       "urlCount": 200
@@ -43,7 +43,7 @@
     "https://pharmeasy.in/blog/post-sitemap3.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-08-24T13:56:25+00:00",
       "status": "ok",
       "urlCount": 200
@@ -51,7 +51,7 @@
     "https://pharmeasy.in/blog/post-sitemap4.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-04T09:33:11+00:00",
       "status": "ok",
       "urlCount": 200
@@ -59,7 +59,7 @@
     "https://pharmeasy.in/blog/post-sitemap5.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-10T11:40:11+00:00",
       "status": "ok",
       "urlCount": 199
@@ -67,7 +67,7 @@
     "https://pharmeasy.in/blog/post-sitemap6.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-15T07:51:32+00:00",
       "status": "ok",
       "urlCount": 200
@@ -75,7 +75,7 @@
     "https://pharmeasy.in/blog/post-sitemap7.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-09T13:26:32+00:00",
       "status": "ok",
       "urlCount": 200
@@ -83,7 +83,7 @@
     "https://pharmeasy.in/sitemaps/diagnostic/local-all-package.xml": {
       "etag": "\"47458719bce2d8649493b8be30fd823f\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:21 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-06-30T02:30:20+05:30",
       "status": "ok",
       "urlCount": 102
@@ -91,7 +91,7 @@
     "https://pharmeasy.in/sitemaps/diagnostic/local-all-test.xml": {
       "etag": "\"e4db709c6537729b10950e7097d0d2de\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:19 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-06-30T02:30:17+05:30",
       "status": "ok",
       "urlCount": 101
@@ -99,7 +99,7 @@
     "https://pharmeasy.in/sitemaps/diagnostic/local-pdp.xml": {
       "etag": "\"d87491fbdc639cc41478435f8f68ba41\"",
       "lastModified": "Sat, 10 Oct 2026 21:00:14 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-10T22:39:46+05:30",
       "status": "ok",
       "urlCount": 1975
@@ -107,7 +107,7 @@
     "https://pharmeasy.in/sitemaps/diagnostic/non-local-all-package.xml": {
       "etag": "\"73a046b23fc1ec2587acf252933fc441\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:39 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-06-30T02:30:38+05:30",
       "status": "ok",
       "urlCount": 1
@@ -115,7 +115,7 @@
     "https://pharmeasy.in/sitemaps/diagnostic/non-local-all-test.xml": {
       "etag": "\"11a025f27ed4b7709573b97767238b06\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:37 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-06-30T02:30:36+05:30",
       "status": "ok",
       "urlCount": 1
@@ -123,7 +123,7 @@
     "https://pharmeasy.in/sitemaps/diagnostic/non-local-pdp.xml": {
       "etag": "\"be76ba9d6474e4d136fa0b2231e1c8ed\"",
       "lastModified": "Sat, 10 Oct 2026 21:00:21 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-10T06:58:10+05:30",
       "status": "ok",
       "urlCount": 727
@@ -131,247 +131,247 @@
     "https://pharmeasy.in/sitemaps/online-medicine-city-location.xml": {
       "etag": "\"0df01133760aadc94d1fa7d5e7f00726\"",
       "lastModified": "Thu, 23 Jan 2025 09:03:01 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "",
       "status": "ok",
       "urlCount": 1310
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-0.xml": {
-      "etag": "\"9da503f2a437e0f0c9c21775d07b0c9c\"",
-      "lastModified": "Sat, 10 Oct 2026 21:50:12 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
-      "maxLastmod": "2026-10-06T00:49:00+05:30",
+      "etag": "\"b010c2f99ff9be783d9e143bb68dc4e5\"",
+      "lastModified": "Sun, 11 Oct 2026 12:41:36 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-08T15:53:00+05:30",
       "status": "ok",
-      "urlCount": 6875
+      "urlCount": 6870
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-1.xml": {
-      "etag": "\"c7c3d882614294860eabced8a6ed24b8\"",
-      "lastModified": "Sat, 10 Oct 2026 21:40:14 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
-      "maxLastmod": "2026-10-05T21:38:00+05:30",
+      "etag": "\"1e2984079cc569458ecdbaa44405f407\"",
+      "lastModified": "Sun, 11 Oct 2026 13:10:14 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-05T22:40:00+05:30",
       "status": "ok",
       "urlCount": 6781
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-10.xml": {
-      "etag": "\"bd3d25671965154758dd2be68958ca0a\"",
-      "lastModified": "Sat, 10 Oct 2026 21:48:33 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"abdef3d8cbef8728e3b8bbec554e73fa\"",
+      "lastModified": "Sun, 11 Oct 2026 13:30:24 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-06T03:26:00+05:30",
       "status": "ok",
-      "urlCount": 6696
+      "urlCount": 6693
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-11.xml": {
-      "etag": "\"60792b25d300b3a637e1e5053caad354\"",
-      "lastModified": "Sat, 10 Oct 2026 21:58:22 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-06T03:28:00+05:30",
+      "etag": "\"a552be3fc83c79e6d47128f1df7f739c\"",
+      "lastModified": "Sun, 11 Oct 2026 14:02:42 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-09T18:27:00+05:30",
       "status": "ok",
-      "urlCount": 6822
+      "urlCount": 6820
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-12.xml": {
-      "etag": "\"59add46441d5597a283dae45cd94fec1\"",
-      "lastModified": "Sat, 10 Oct 2026 21:39:50 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"d919a273dad5c3374dba3a0a949d8e5c\"",
+      "lastModified": "Sun, 11 Oct 2026 12:54:53 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-06T02:17:00+05:30",
       "status": "ok",
-      "urlCount": 6775
+      "urlCount": 6774
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-13.xml": {
-      "etag": "\"5274dc58fbe76f6e7f5a5bae7b5e8a58\"",
-      "lastModified": "Sat, 10 Oct 2026 21:47:51 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-05T21:37:00+05:30",
+      "etag": "\"2060d784c25d0885f684fc2efe5aae4b\"",
+      "lastModified": "Sun, 11 Oct 2026 13:40:01 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-08T11:58:00+05:30",
       "status": "ok",
       "urlCount": 6774
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-14.xml": {
-      "etag": "\"74ff7297df8e3c2a9d3ff26bb20dae8d\"",
-      "lastModified": "Sat, 10 Oct 2026 21:29:13 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-05T22:41:00+05:30",
+      "etag": "\"24633c67e3f36fc51241783bc4674044\"",
+      "lastModified": "Sun, 11 Oct 2026 13:24:55 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-09T18:28:00+05:30",
       "status": "ok",
-      "urlCount": 6698
+      "urlCount": 6697
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-15.xml": {
-      "etag": "\"add7fdc115728563012f6b7e53fdea85\"",
-      "lastModified": "Sat, 10 Oct 2026 22:05:33 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-06T16:56:00+05:30",
+      "etag": "\"a3f51a2a834079ed59b9818e43fa46ad\"",
+      "lastModified": "Sun, 11 Oct 2026 13:32:04 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-07T16:11:00+05:30",
       "status": "ok",
-      "urlCount": 5774
+      "urlCount": 5730
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-16.xml": {
-      "etag": "\"0f34b2e2896eff41b44609768aa3a640\"",
-      "lastModified": "Sat, 10 Oct 2026 22:03:13 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-05T22:41:00+05:30",
+      "etag": "\"6da63100987df980bb150b73a82cbe10\"",
+      "lastModified": "Sun, 11 Oct 2026 14:11:43 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-06T03:29:00+05:30",
       "status": "ok",
-      "urlCount": 4993
+      "urlCount": 4932
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-17.xml": {
-      "etag": "\"7dd3bf629616d8831ea714ff3aafa164\"",
-      "lastModified": "Sat, 10 Oct 2026 21:46:47 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"0a72858660e6a20b0b3cb65c0fcadbee\"",
+      "lastModified": "Sun, 11 Oct 2026 13:59:30 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-06T02:52:00+05:30",
       "status": "ok",
-      "urlCount": 6633
+      "urlCount": 6575
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-18.xml": {
-      "etag": "\"ce808b7e10c41b255d27e29d90e07075\"",
-      "lastModified": "Sat, 10 Oct 2026 21:01:00 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-09-23T13:15:00+05:30",
+      "etag": "\"36fe09c9e8a2ef82d772042513cd98b5\"",
+      "lastModified": "Sun, 11 Oct 2026 13:40:30 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-05T17:39:00+05:30",
       "status": "ok",
-      "urlCount": 5532
+      "urlCount": 5518
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-19.xml": {
-      "etag": "\"1f25b96edc3762d1a10d0eab1693bdcf\"",
-      "lastModified": "Sat, 10 Oct 2026 21:36:31 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"ec4524ad3af3280e5fd02f4b26773bda\"",
+      "lastModified": "Sun, 11 Oct 2026 12:45:10 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-23T13:19:00+05:30",
       "status": "ok",
-      "urlCount": 5526
+      "urlCount": 5503
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-2.xml": {
-      "etag": "\"a367427743c4d06242ea599c941d5afc\"",
-      "lastModified": "Sat, 10 Oct 2026 21:57:52 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
-      "maxLastmod": "2026-10-06T02:19:00+05:30",
+      "etag": "\"c920659c404da26c77217b0905917bd5\"",
+      "lastModified": "Sun, 11 Oct 2026 12:43:43 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-06T03:24:00+05:30",
       "status": "ok",
       "urlCount": 6682
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-20.xml": {
-      "etag": "\"651fa4c081ca99137fc1f6161e732b41\"",
-      "lastModified": "Sat, 10 Oct 2026 22:04:09 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"a0ffdaa35494a9698f1e9a87dd50d753\"",
+      "lastModified": "Sun, 11 Oct 2026 12:57:59 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-24T14:38:00+05:30",
       "status": "ok",
-      "urlCount": 5474
+      "urlCount": 5458
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-21.xml": {
-      "etag": "\"e2769241d043d885be997076f7e37d8a\"",
-      "lastModified": "Sat, 10 Oct 2026 21:55:45 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"33e52c4acefe12708f9b744db0118e81\"",
+      "lastModified": "Sun, 11 Oct 2026 12:40:54 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-23T12:57:00+05:30",
       "status": "ok",
-      "urlCount": 5438
+      "urlCount": 5426
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-22.xml": {
-      "etag": "\"6b62100da0c4ee2f1f6ccbacdc2256da\"",
-      "lastModified": "Sat, 10 Oct 2026 21:59:50 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-05T13:06:00+05:30",
+      "etag": "\"8a68f1de549b5f82ea16fea43bfefb8b\"",
+      "lastModified": "Sun, 11 Oct 2026 12:14:24 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-05T17:39:00+05:30",
       "status": "ok",
-      "urlCount": 5555
+      "urlCount": 5552
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-23.xml": {
-      "etag": "\"178e83a40a7eabb12c62933bea3a9071\"",
-      "lastModified": "Sat, 10 Oct 2026 12:59:13 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-09-28T18:28:00+05:30",
+      "etag": "\"9c343a284128fec8bc09b1d60db7ae0c\"",
+      "lastModified": "Sun, 11 Oct 2026 13:36:18 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-05T20:34:00+05:30",
       "status": "ok",
-      "urlCount": 5542
+      "urlCount": 5532
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-24.xml": {
-      "etag": "\"d3cae2d15d96f34807ad50865738ffc7\"",
-      "lastModified": "Sat, 10 Oct 2026 21:31:38 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"7b0eb201f2d724c14efccdf2726ea754\"",
+      "lastModified": "Sun, 11 Oct 2026 14:10:13 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-30T19:35:00+05:30",
       "status": "ok",
-      "urlCount": 5514
+      "urlCount": 5499
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-25.xml": {
-      "etag": "\"4e392347d0a7c2b8a8f1301cdf70591b\"",
-      "lastModified": "Sat, 10 Oct 2026 21:55:07 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"406f4709c9b55eb0ce3d07b2b6622b64\"",
+      "lastModified": "Sun, 11 Oct 2026 12:51:22 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-27T18:14:00+05:30",
       "status": "ok",
-      "urlCount": 5546
+      "urlCount": 5533
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-26.xml": {
-      "etag": "\"f44222f0d98b225bddffd355629aae9c\"",
-      "lastModified": "Sat, 10 Oct 2026 20:42:03 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"5113faf8f7c84ce8a695400fd47411d9\"",
+      "lastModified": "Sun, 11 Oct 2026 13:01:03 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-03T15:01:00+05:30",
       "status": "ok",
-      "urlCount": 5545
+      "urlCount": 5530
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-27.xml": {
-      "etag": "\"13706717f1003ad6f78982c8a86322d3\"",
-      "lastModified": "Sat, 10 Oct 2026 21:32:47 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-06T01:20:00+05:30",
+      "etag": "\"a88125c6839b2b8aa9143554894fb556\"",
+      "lastModified": "Sun, 11 Oct 2026 14:17:28 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-06T01:44:00+05:30",
       "status": "ok",
-      "urlCount": 8668
+      "urlCount": 8646
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-28.xml": {
       "etag": "\"017016eea819aa5ee0d42f6dc2e923f0\"",
       "lastModified": "Tue, 09 Dec 2025 06:47:26 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2025-08-16T20:24:00+05:30",
       "status": "ok",
       "urlCount": 1
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-3.xml": {
-      "etag": "\"0b567daa4fc5979833f2dacf0438eea4\"",
-      "lastModified": "Sat, 10 Oct 2026 21:51:00 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "etag": "\"ede4b4a4cebd1d75767e299fffd36f48\"",
+      "lastModified": "Sun, 11 Oct 2026 14:25:18 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-06T13:37:00+05:30",
       "status": "ok",
-      "urlCount": 6854
+      "urlCount": 6852
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-4.xml": {
-      "etag": "\"d61c22377c2fb40d64e0c1a27b1bdf90\"",
-      "lastModified": "Sat, 10 Oct 2026 21:48:51 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "etag": "\"b13ba2913f055951f14aa829691189c2\"",
+      "lastModified": "Sun, 11 Oct 2026 12:48:32 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-08T12:03:00+05:30",
       "status": "ok",
-      "urlCount": 6805
+      "urlCount": 6803
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-5.xml": {
-      "etag": "\"b593db66df133263e9c00564afeadae4\"",
-      "lastModified": "Sat, 10 Oct 2026 21:52:09 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
-      "maxLastmod": "2026-10-06T02:51:00+05:30",
+      "etag": "\"eb12e2610e16878960bf16574519a9ef\"",
+      "lastModified": "Sun, 11 Oct 2026 14:01:20 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-08T17:45:00+05:30",
       "status": "ok",
-      "urlCount": 6831
+      "urlCount": 6830
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-6.xml": {
-      "etag": "\"0be56e3b5633263a1d2e33906c1c1b42\"",
-      "lastModified": "Sat, 10 Oct 2026 21:34:00 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"1b3ceb8337efa822b3c2a52ae6a1d59b\"",
+      "lastModified": "Sun, 11 Oct 2026 13:36:52 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-06T01:43:00+05:30",
       "status": "ok",
-      "urlCount": 6745
+      "urlCount": 6744
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-7.xml": {
-      "etag": "\"aa28788ade28386ab90d0662d0103de5\"",
-      "lastModified": "Sat, 10 Oct 2026 22:02:44 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-06T00:48:00+05:30",
+      "etag": "\"da5fd7476f482cd0b702a5ef2ab20c62\"",
+      "lastModified": "Sun, 11 Oct 2026 14:14:12 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-06T05:47:00+05:30",
       "status": "ok",
-      "urlCount": 6841
+      "urlCount": 6838
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-8.xml": {
-      "etag": "\"4221906171b16ae4085302f557b7351a\"",
-      "lastModified": "Sat, 10 Oct 2026 22:04:22 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2026-10-05T22:39:00+05:30",
+      "etag": "\"6a00acdb23e89de66693c29535bb2088\"",
+      "lastModified": "Sun, 11 Oct 2026 13:54:58 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
+      "maxLastmod": "2026-10-06T13:54:00+05:30",
       "status": "ok",
-      "urlCount": 6788
+      "urlCount": 6784
     },
     "https://pharmeasy.in/sitemaps/online-medicine-order/sitemap-prescription-medicine-9.xml": {
-      "etag": "\"3d8e099390a0dc814faf2b3ddfc1260a\"",
-      "lastModified": "Sat, 10 Oct 2026 21:41:52 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"6ba4fae17cd2cec91c8522802b23af41\"",
+      "lastModified": "Sun, 11 Oct 2026 13:23:20 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-06T04:01:00+05:30",
       "status": "ok",
-      "urlCount": 6814
+      "urlCount": 6813
     },
     "https://pharmeasy.in/sitemaps/otc-products/sitemap-otc-products-0.xml": {
       "etag": "\"921eb0318afadd1b4f97bfd04491b9ca-3\"",
       "lastModified": "Sat, 10 Oct 2026 05:54:57 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-17T19:26:00+05:30",
       "status": "ok",
       "urlCount": 7560
@@ -379,7 +379,7 @@
     "https://pharmeasy.in/sitemaps/otc-products/sitemap-otc-products-1.xml": {
       "etag": "\"7335cf9009475fec5ad5a39680fcfe5a-3\"",
       "lastModified": "Sat, 10 Oct 2026 05:59:34 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-17T23:28:00+05:30",
       "status": "ok",
       "urlCount": 7550
@@ -387,7 +387,7 @@
     "https://pharmeasy.in/sitemaps/otc-products/sitemap-otc-products-2.xml": {
       "etag": "\"155e0e8dad50355d55aa61c15bbb90d7-3\"",
       "lastModified": "Sat, 10 Oct 2026 05:10:58 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-18T08:59:00+05:30",
       "status": "ok",
       "urlCount": 7548
@@ -395,7 +395,7 @@
     "https://pharmeasy.in/sitemaps/otc-products/sitemap-otc-products-3.xml": {
       "etag": "\"36647962c1023464937924288e0fbfa1-3\"",
       "lastModified": "Sat, 10 Oct 2026 06:47:50 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-17T23:32:00+05:30",
       "status": "ok",
       "urlCount": 7642
@@ -403,7 +403,7 @@
     "https://pharmeasy.in/sitemaps/otc-products/sitemap-otc-products-4.xml": {
       "etag": "\"df87333243ffe3e21ee54feb3ec55563-3\"",
       "lastModified": "Sat, 10 Oct 2026 05:53:43 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-09-18T09:58:00+05:30",
       "status": "ok",
       "urlCount": 7582
@@ -411,7 +411,7 @@
     "https://pharmeasy.in/sitemaps/otc-products/sitemap-otc-products-5.xml": {
       "etag": "\"211f085394a35ca44a11e3bbe34c6c33-2\"",
       "lastModified": "Sat, 10 Oct 2026 06:49:09 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-06T18:33:00+05:30",
       "status": "ok",
       "urlCount": 7400
@@ -419,7 +419,7 @@
     "https://pharmeasy.in/sitemaps/otc-products/sitemap-otc-products-6.xml": {
       "etag": "\"b92fb46fec7a51ae00142c71c87f6ea4\"",
       "lastModified": "Fri, 28 Mar 2025 17:06:59 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2025-03-28T07:12:15+05:30",
       "status": "ok",
       "urlCount": 1
@@ -427,7 +427,7 @@
     "https://pharmeasy.in/sitemaps/sitemap-categories.xml": {
       "etag": "\"e4dcbe83c26d6f3d601c2eca3a9fc143\"",
       "lastModified": "Fri, 09 Oct 2026 18:30:02 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-10T00:00:01+05:30",
       "status": "ok",
       "urlCount": 367
@@ -435,7 +435,7 @@
     "https://pharmeasy.in/sitemaps/sitemap-doctors.xml": {
       "etag": "\"80963441ef0565d0541de3026b5dbdd5\"",
       "lastModified": "Fri, 09 Oct 2026 13:31:06 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-10-09T19:01:05+05:30",
       "status": "ok",
       "urlCount": 175
@@ -443,7 +443,7 @@
     "https://pharmeasy.in/sitemaps/sitemap-general.xml": {
       "etag": "\"5bfc04f0832841f3a199138e098dd9b5\"",
       "lastModified": "Mon, 18 May 2026 21:00:21 GMT",
-      "lastSeen": "2026-10-11T13:06:04+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2026-05-19T02:30:20+05:30",
       "status": "ok",
       "urlCount": 11
@@ -451,7 +451,7 @@
     "https://pharmeasy.in/sitemaps/sitemap-molecule.xml": {
       "etag": "\"cfb82b29fc94ad95565ed91497314307\"",
       "lastModified": "Wed, 09 Feb 2022 18:36:40 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2022-02-10T00:06:12+05:30",
       "status": "ok",
       "urlCount": 3117
@@ -459,127 +459,127 @@
     "https://pharmeasy.in/sitemaps/sitemap-otc-brands.xml": {
       "etag": "\"7e3e9fce4fa90f3d8ca017f1bb49a52a\"",
       "lastModified": "Fri, 05 Mar 2021 15:01:28 GMT",
-      "lastSeen": "2026-10-10T22:06:13+00:00",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2021-03-05T20:04:34+05:30",
       "status": "ok",
       "urlCount": 713
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-0.xml": {
-      "etag": "\"f1ddd0ff2b341992bcb9d7b1161e20e7\"",
-      "lastModified": "Sat, 10 Oct 2026 20:38:06 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"590e46a1a1803efb6d0ef288bbeb453f\"",
+      "lastModified": "Sun, 11 Oct 2026 08:15:31 GMT",
+      "lastSeen": "2026-10-11T14:29:14+00:00",
       "maxLastmod": "2025-06-16T11:34:07+05:30",
       "status": "ok",
-      "urlCount": 408
+      "urlCount": 404
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-1.xml": {
       "etag": "\"3d64799c1ca9e85e8e2f4eb02bb8e852\"",
-      "lastModified": "Sat, 10 Oct 2026 08:41:03 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 12:28:14 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T14:11:43+05:30",
       "status": "ok",
       "urlCount": 394
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-10.xml": {
       "etag": "\"1d17f8e6c88253156cd7d23361086265\"",
-      "lastModified": "Sat, 10 Oct 2026 21:10:24 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 07:44:58 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T07:03:00+05:30",
       "status": "ok",
       "urlCount": 415
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-11.xml": {
-      "etag": "\"9cb93292190769813e93fdf0e8b0e831\"",
-      "lastModified": "Sat, 10 Oct 2026 12:52:29 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"20aefee7eccfc8f60f7a6016d535fe8d\"",
+      "lastModified": "Sun, 11 Oct 2026 14:02:41 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T02:05:03+05:30",
       "status": "ok",
-      "urlCount": 364
+      "urlCount": 363
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-12.xml": {
       "etag": "\"51bea4d09da5eb2b9b5840719607b9b1\"",
-      "lastModified": "Sat, 10 Oct 2026 21:25:58 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 09:06:30 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T02:02:39+05:30",
       "status": "ok",
       "urlCount": 262
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-13.xml": {
       "etag": "\"aceabc98e6f846c33b3def207f6dd589\"",
-      "lastModified": "Sat, 10 Oct 2026 21:25:15 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 08:01:36 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T11:16:23+05:30",
       "status": "ok",
       "urlCount": 367
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-14.xml": {
       "etag": "\"38b2db6279788e0dc0a47ef661a2763d\"",
-      "lastModified": "Sat, 10 Oct 2026 12:21:44 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 04:23:17 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T06:46:44+05:30",
       "status": "ok",
       "urlCount": 407
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-15.xml": {
-      "etag": "\"6d808d3283402c5fffe02d55aaf33995\"",
-      "lastModified": "Sat, 10 Oct 2026 22:05:33 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"1355b2d5affa6a5f4aa9f9202265aace\"",
+      "lastModified": "Sun, 11 Oct 2026 13:31:00 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T12:41:25+05:30",
       "status": "ok",
-      "urlCount": 147
+      "urlCount": 138
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-16.xml": {
-      "etag": "\"d70415a4ea2325aafc10f0afbd410ac6\"",
-      "lastModified": "Sat, 10 Oct 2026 10:49:27 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"751d92118d8b36d74382bf46656e7a64\"",
+      "lastModified": "Sun, 11 Oct 2026 09:57:14 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T13:54:53+05:30",
       "status": "ok",
-      "urlCount": 164
+      "urlCount": 163
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-17.xml": {
       "etag": "\"5ddcb0c15ea5658efd990a09dedc691c\"",
       "lastModified": "Sat, 10 Oct 2026 10:42:58 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-14T03:26:25+05:30",
       "status": "ok",
       "urlCount": 50
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-18.xml": {
       "etag": "\"280c0c457d6236e977248ee5554a731a\"",
-      "lastModified": "Sat, 10 Oct 2026 03:08:10 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 03:31:12 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-15T01:56:47+05:30",
       "status": "ok",
       "urlCount": 22
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-19.xml": {
-      "etag": "\"b1c4476f46f8299a123b6ab69a9f7d4a\"",
-      "lastModified": "Sat, 10 Oct 2026 10:54:16 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"add96101343e6e2739774ae7c27e6362\"",
+      "lastModified": "Sun, 11 Oct 2026 12:09:47 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T01:16:10+05:30",
       "status": "ok",
-      "urlCount": 40
+      "urlCount": 38
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-2.xml": {
       "etag": "\"250e0f93d039cabe960d7e95352d3cd4\"",
-      "lastModified": "Sat, 10 Oct 2026 12:43:54 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 12:29:32 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T11:46:07+05:30",
       "status": "ok",
       "urlCount": 383
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-20.xml": {
-      "etag": "\"49e4b5d95afb06edb9deda97ac51870a\"",
-      "lastModified": "Sat, 10 Oct 2026 09:30:44 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"a5bc0e753bf1faaee69de879725e9386\"",
+      "lastModified": "Sun, 11 Oct 2026 12:57:58 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-15T23:48:55+05:30",
       "status": "ok",
-      "urlCount": 44
+      "urlCount": 40
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-21.xml": {
       "etag": "\"a280a89454e84d1432a6f2c1d87610e9\"",
       "lastModified": "Sun, 04 Oct 2026 08:57:19 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-14T00:24:14+05:30",
       "status": "ok",
       "urlCount": 44
@@ -587,103 +587,103 @@
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-22.xml": {
       "etag": "\"d7a2f6ad1ad0cf47f6025924d19e951c\"",
       "lastModified": "Sat, 10 Oct 2026 21:20:44 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T06:40:59+05:30",
       "status": "ok",
       "urlCount": 27
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-23.xml": {
-      "etag": "\"9e5ea473d605afce17b34f47a002e706\"",
-      "lastModified": "Sat, 10 Oct 2026 07:52:59 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"18b5270639bdbd3ea15711e73614894b\"",
+      "lastModified": "Sun, 11 Oct 2026 13:36:18 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-15T10:44:38+05:30",
       "status": "ok",
-      "urlCount": 34
+      "urlCount": 33
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-24.xml": {
       "etag": "\"94fb968d2a01d9e4e03649f5cfe731dc\"",
       "lastModified": "Sat, 10 Oct 2026 19:51:00 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-15T06:25:31+05:30",
       "status": "ok",
       "urlCount": 49
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-25.xml": {
-      "etag": "\"54da05516d46db0ebc23792eb41fed7f\"",
-      "lastModified": "Sat, 10 Oct 2026 19:54:25 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"166419e6b910a1f28df8708f3809737c\"",
+      "lastModified": "Sun, 11 Oct 2026 05:49:26 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-15T22:44:45+05:30",
       "status": "ok",
-      "urlCount": 52
+      "urlCount": 50
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-26.xml": {
-      "etag": "\"96be5733d367498516b3f82efcfc9e22\"",
-      "lastModified": "Sat, 10 Oct 2026 20:42:02 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"3dfa74f1a41e07d16d6fa052b9fc529a\"",
+      "lastModified": "Sun, 11 Oct 2026 06:18:24 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T13:51:25+05:30",
       "status": "ok",
-      "urlCount": 38
+      "urlCount": 37
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-27.xml": {
-      "etag": "\"d4e53d792559e458f296a048c7c9763c\"",
-      "lastModified": "Sat, 10 Oct 2026 11:12:37 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"181c0e25de43cea8a449197f83258bfe\"",
+      "lastModified": "Sun, 11 Oct 2026 13:56:49 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-08-16T20:15:00+05:30",
       "status": "ok",
-      "urlCount": 511
+      "urlCount": 508
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-3.xml": {
       "etag": "\"98139ec4f7365c14cd55ea89cf970a06\"",
-      "lastModified": "Sat, 10 Oct 2026 20:03:51 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 13:40:42 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T10:17:27+05:30",
       "status": "ok",
       "urlCount": 291
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-4.xml": {
       "etag": "\"fa1cbb612d4b6673cb99ea940e9a737d\"",
-      "lastModified": "Sat, 10 Oct 2026 08:53:18 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 11:55:42 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T05:41:34+05:30",
       "status": "ok",
       "urlCount": 300
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-5.xml": {
-      "etag": "\"61e6ef7224da4caeb4f130e971d6ee8d\"",
-      "lastModified": "Sat, 10 Oct 2026 20:13:53 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"2428c7165b96b5d8a6b19cd43c3136b1\"",
+      "lastModified": "Sun, 11 Oct 2026 08:20:26 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T11:47:44+05:30",
       "status": "ok",
-      "urlCount": 398
+      "urlCount": 397
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-6.xml": {
       "etag": "\"bdba51b19b847d8da60363a544740dd2\"",
-      "lastModified": "Sat, 10 Oct 2026 10:45:44 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 12:26:10 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T14:17:11+05:30",
       "status": "ok",
       "urlCount": 377
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-7.xml": {
-      "etag": "\"49aac55ade5578600d3e8e8b2e58c1e1\"",
-      "lastModified": "Sat, 10 Oct 2026 11:07:49 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "etag": "\"34dd157a5b04e4ab84ba90b2fcd720e6\"",
+      "lastModified": "Sun, 11 Oct 2026 09:32:04 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T11:14:42+05:30",
       "status": "ok",
-      "urlCount": 317
+      "urlCount": 316
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-8.xml": {
-      "etag": "\"0db0d83c597bd2e2490e4016e65a6867\"",
-      "lastModified": "Sat, 10 Oct 2026 20:48:38 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
-      "maxLastmod": "2025-06-16T03:33:47+05:30",
+      "etag": "\"7c2304b916f0a83c2f293285ee2e3e74\"",
+      "lastModified": "Sun, 11 Oct 2026 07:39:48 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
+      "maxLastmod": "2025-06-15T04:58:09+05:30",
       "status": "ok",
-      "urlCount": 366
+      "urlCount": 364
     },
     "https://pharmeasy.in/sitemaps/vernacular/hindi-medicine/sitemap-prescription-medicine-9.xml": {
       "etag": "\"7e09a84d274880f590e9ecc2a3e7e02f\"",
-      "lastModified": "Sat, 10 Oct 2026 21:28:45 GMT",
-      "lastSeen": "2026-10-10T22:06:14+00:00",
+      "lastModified": "Sun, 11 Oct 2026 10:32:22 GMT",
+      "lastSeen": "2026-10-11T14:29:15+00:00",
       "maxLastmod": "2025-06-16T14:02:16+05:30",
       "status": "ok",
       "urlCount": 394
