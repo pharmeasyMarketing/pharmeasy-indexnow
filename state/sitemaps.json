@@ -1,17 +1,17 @@
 {
   "lastRun": {
-    "at": "2026-10-19T17:34:25+00:00",
-    "candidates": 62,
+    "at": "2026-10-19T22:28:32+00:00",
+    "candidates": 67,
     "deferred": 0,
     "mode": "normal",
-    "submitted": 9,
+    "submitted": 67,
     "tier": "fast"
   },
   "leaves": {
     "https://pharmeasy.in/blog/author-sitemap.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-08-21T12:51:30+00:00",
       "status": "ok",
       "urlCount": 42
@@ -19,7 +19,7 @@
     "https://pharmeasy.in/blog/page-sitemap.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-07-20T06:51:25+00:00",
       "status": "ok",
       "urlCount": 2
@@ -27,15 +27,15 @@
     "https://pharmeasy.in/blog/post-sitemap.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
-      "maxLastmod": "2026-08-13T12:16:03+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
+      "maxLastmod": "2026-08-17T06:35:17+00:00",
       "status": "ok",
       "urlCount": 198
     },
     "https://pharmeasy.in/blog/post-sitemap2.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-08-24T10:08:30+00:00",
       "status": "ok",
       "urlCount": 200
@@ -43,7 +43,7 @@
     "https://pharmeasy.in/blog/post-sitemap3.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-09-09T10:40:26+00:00",
       "status": "ok",
       "urlCount": 200
@@ -51,7 +51,7 @@
     "https://pharmeasy.in/blog/post-sitemap4.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-09-11T12:02:32+00:00",
       "status": "ok",
       "urlCount": 200
@@ -59,7 +59,7 @@
     "https://pharmeasy.in/blog/post-sitemap5.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-09-22T10:20:05+00:00",
       "status": "ok",
       "urlCount": 200
@@ -67,7 +67,7 @@
     "https://pharmeasy.in/blog/post-sitemap6.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-10-16T07:44:20+00:00",
       "status": "ok",
       "urlCount": 200
@@ -75,7 +75,7 @@
     "https://pharmeasy.in/blog/post-sitemap7.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-10-16T13:40:45+00:00",
       "status": "ok",
       "urlCount": 199
@@ -83,7 +83,7 @@
     "https://pharmeasy.in/blog/post-sitemap8.xml": {
       "etag": null,
       "lastModified": null,
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-10-16T13:43:45+00:00",
       "status": "ok",
       "urlCount": 4
@@ -91,7 +91,7 @@
     "https://pharmeasy.in/sitemaps/diagnostic/local-all-package.xml": {
       "etag": "\"47458719bce2d8649493b8be30fd823f\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:21 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-06-30T02:30:20+05:30",
       "status": "ok",
       "urlCount": 102
@@ -99,23 +99,23 @@
     "https://pharmeasy.in/sitemaps/diagnostic/local-all-test.xml": {
       "etag": "\"e4db709c6537729b10950e7097d0d2de\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:19 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-06-30T02:30:17+05:30",
       "status": "ok",
       "urlCount": 101
     },
     "https://pharmeasy.in/sitemaps/diagnostic/local-pdp.xml": {
-      "etag": "\"e6e73ad449aee28af42643a6e803540d\"",
-      "lastModified": "Sat, 17 Oct 2026 21:00:06 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
-      "maxLastmod": "2026-10-17T15:49:32+05:30",
+      "etag": "\"8a63df2708f62aeb905a119e2c0674a8\"",
+      "lastModified": "Mon, 19 Oct 2026 21:00:08 GMT",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
+      "maxLastmod": "2026-10-19T16:49:26+05:30",
       "status": "ok",
       "urlCount": 1975
     },
     "https://pharmeasy.in/sitemaps/diagnostic/non-local-all-package.xml": {
       "etag": "\"73a046b23fc1ec2587acf252933fc441\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:39 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-06-30T02:30:38+05:30",
       "status": "ok",
       "urlCount": 1
@@ -123,16 +123,16 @@
     "https://pharmeasy.in/sitemaps/diagnostic/non-local-all-test.xml": {
       "etag": "\"11a025f27ed4b7709573b97767238b06\"",
       "lastModified": "Mon, 29 Jun 2026 21:00:37 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-06-30T02:30:36+05:30",
       "status": "ok",
       "urlCount": 1
     },
     "https://pharmeasy.in/sitemaps/diagnostic/non-local-pdp.xml": {
-      "etag": "\"c5172d99f6691629c3f08e4f167f2b8f\"",
-      "lastModified": "Sun, 18 Oct 2026 21:00:07 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
-      "maxLastmod": "2026-10-18T06:58:10+05:30",
+      "etag": "\"f3e367fa584c25df8599be0c2cdc577c\"",
+      "lastModified": "Mon, 19 Oct 2026 21:00:15 GMT",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
+      "maxLastmod": "2026-10-19T06:58:12+05:30",
       "status": "ok",
       "urlCount": 730
     },
@@ -433,17 +433,17 @@
       "urlCount": 1
     },
     "https://pharmeasy.in/sitemaps/sitemap-categories.xml": {
-      "etag": "\"b45dbc524ed8fa56007a435dac205ad9\"",
-      "lastModified": "Sun, 18 Oct 2026 18:30:02 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
-      "maxLastmod": "2026-10-13T00:00:02+05:30",
+      "etag": "\"fcfa3a6f8ac59236ff203e4ac7e245fc\"",
+      "lastModified": "Mon, 19 Oct 2026 18:30:03 GMT",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
+      "maxLastmod": "2026-10-20T00:00:01+05:30",
       "status": "ok",
-      "urlCount": 384
+      "urlCount": 359
     },
     "https://pharmeasy.in/sitemaps/sitemap-doctors.xml": {
       "etag": "\"e73f784c7d78dbeee553f763b2054987\"",
       "lastModified": "Tue, 13 Oct 2026 07:32:54 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-10-13T13:02:53+05:30",
       "status": "ok",
       "urlCount": 177
@@ -451,7 +451,7 @@
     "https://pharmeasy.in/sitemaps/sitemap-general.xml": {
       "etag": "\"5bfc04f0832841f3a199138e098dd9b5\"",
       "lastModified": "Mon, 18 May 2026 21:00:21 GMT",
-      "lastSeen": "2026-10-19T17:34:25+00:00",
+      "lastSeen": "2026-10-19T22:28:32+00:00",
       "maxLastmod": "2026-05-19T02:30:20+05:30",
       "status": "ok",
       "urlCount": 11
