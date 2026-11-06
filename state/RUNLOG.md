@@ -1,11 +1,12 @@
 # IndexNow run log
 
-_Last run: 2026-11-06 07:59 UTC — ✅ OK · fast tier · submitted 6, candidates 27._
+_Last run: 2026-11-06 15:28 UTC — ✅ OK · full tier · submitted 127, candidates 137._
 
 Most recent 200 run(s), newest first. Times are UTC. Full machine-readable history: [`runs.jsonl`](runs.jsonl).
 
 | UTC time | Tier | Mode | Status | Cand. | Submitted | Deferred | Warn |
 |----------|------|------|--------|------:|----------:|---------:|-----:|
+| 2026-11-06 15:28 UTC | full | normal | ✅ ok | 137 | 127 | 0 | 0 |
 | 2026-11-06 07:59 UTC | fast | normal | ✅ ok | 27 | 6 | 0 | 0 |
 | 2026-11-06 00:24 UTC | fast | normal | ✅ ok | 21 | 0 | 0 | 0 |
 | 2026-11-05 23:53 UTC | full | normal | ✅ ok | 160 | 133 | 0 | 0 |
@@ -205,4 +206,3 @@ Most recent 200 run(s), newest first. Times are UTC. Full machine-readable histo
 | 2026-10-10 23:40 UTC | fast | normal | ✅ ok | 0 | 0 | 0 | 0 |
 | 2026-10-10 22:06 UTC | full | normal | ✅ ok | 351 | 351 | 0 | 0 |
 | 2026-10-10 20:10 UTC | fast | normal | ✅ ok | 3 | 3 | 0 | 0 |
-| 2026-10-10 15:27 UTC | fast | normal | ✅ ok | 0 | 0 | 0 | 0 |
